@@ -1,0 +1,28 @@
+body { font-family: sans-serif; margin: 0; padding: 20px; line-height: 1.6; }
+nav { margin-bottom: 30px; border-bottom: 1px solid #ccc; padding-bottom: 10px; }
+nav a { margin-right: 15px; text-decoration: none; color: blue; }
+
+.hidden { display: none; }
+.booking-section { max-width: 400px; margin: 0 auto; display: flex; flex-direction: column; gap: 10px; }
+
+/* Сетка преподавателей */
+.teachers-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 колонки */
+    gap: 20px;
+}
+
+.teacher-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+.teacher-card img { width: 100px; height: 100px; background: #ccc; border-radius: 50%; margin-bottom: 10px; }
+
+/* Сетка для слотов времени */
+#slots-container { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+.slot { padding: 10px; border: 1px solid #28a745; cursor: pointer; border-radius: 4px; }
+.slot.busy { background: #eee; border-color: #ccc; cursor: not-allowed; opacity: 0.6; }
