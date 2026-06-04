@@ -1,10 +1,36 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <title>Запись на консультации</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запись на консультации</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Запись на консультации</h1>
+    <nav>
+        <a href="index.html">🏠 Главная</a>
+        <a href="teachers.html">👨‍🏫 Преподаватели</a>
+        <a href="my-bookings.html">📋 Мои записи</a>
+    </nav>
+
+    <main>
+        <h1>📝 Запись на консультацию</h1>
+        <div class="booking-section">
+            <label>👨‍🏫 Выберите преподавателя:</label>
+            <select id="teacher-select">
+                <option value="">-- Выберите --</option>
+            </select>
+            
+            <label>📅 Выберите дату:</label>
+            <input type="date" id="date-input">
+            
+            <div id="time-menu" class="hidden">
+                <h4>🕐 Доступное время:</h4>
+                <div id="slots-container"></div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
